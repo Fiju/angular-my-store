@@ -1,5 +1,5 @@
 <div class="item-container">
-  <img src="{{ product.url }}" />
+  <img routerLink="/product/{{ product.id }}" src="{{ product.url }}" />
   <div class="info">
     <label>{{ product.name }}</label> - <span>${{ product.price }}</span>
   </div>

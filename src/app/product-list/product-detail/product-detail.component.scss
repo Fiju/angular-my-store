@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  column-gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+
+  img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    label {
+      font-size: 20px;
+      font-weight: 500;
+      font-family: sans-serif;
+    }
+  }
+
+  .cart-options {
+    margin-top: 2rem;
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
