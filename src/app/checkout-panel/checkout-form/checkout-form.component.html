@@ -1,18 +1,43 @@
-<form (ngSubmit)="onSubmit()" class="form" [formGroup]="checkoutForm">
+<form (ngSubmit)="onSubmit()" #form="ngForm" class="form">
   <fieldset>
     <label for="full-name">Full Name: </label>
-    <input id="full-name" type="text" formControlName="fullname" />
+    <input
+      name="fullname"
+      [(ngModel)]="fullname"
+      value="{{ fullname }}"
+      id="full-name"
+      type="text"
+      minlength="3"
+      required
+    />
   </fieldset>
   <fieldset>
     <label for="address">Address: </label>
-    <input id="address" type="text" formControlName="address" />
+    <input
+      name="address"
+      [(ngModel)]="address"
+      value="{{ address }}"
+      id="address"
+      type="text"
+      minlength="5"
+      required
+    />
   </fieldset>
   <fieldset>
     <label for="card">Card Number: </label>
-    <input id="card" type="text" formControlName="card" />
+    <input
+      name="card"
+      [(ngModel)]="card"
+      value="{{ card }}"
+      id="card"
+      type="number"
+      minlength="12"
+      maxlength="16"
+      required
+    />
   </fieldset>
 
   <fieldset>
-    <button type="submit" [disabled]="!checkoutForm.valid">Submit</button>
+    <button type="submit" [disabled]="form.invalid">Submit</button>
   </fieldset>
 </form>

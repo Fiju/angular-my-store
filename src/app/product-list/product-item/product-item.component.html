@@ -4,7 +4,12 @@
     <label>{{ product.name }}</label> - <span>${{ product.price }}</span>
   </div>
   <div class="cart-options">
-    <select value="{{ quantity }}" (change)="updateQuantity($event)">
+    <select
+      name="quantity"
+      [(ngModel)]="quantity"
+      value="{{ quantity }}"
+      (ngModelChange)="updateQuantity($event)"
+    >
       <option *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" value="{{ i }}">
         {{ i }}
       </option>
