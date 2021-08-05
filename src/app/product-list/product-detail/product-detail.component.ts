@@ -3,7 +3,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { Product } from '../../models/Product';
 import { ProductsService } from '../../services/products.service';
 import { switchMap } from 'rxjs/operators';
-import { CartService } from '../../cart.service';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-product-detail',

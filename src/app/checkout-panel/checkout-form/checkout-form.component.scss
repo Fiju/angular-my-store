@@ -1,0 +1,17 @@
+.form {
+  fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    input {
+      height: 25px;
+      border: 1px solid #2d1b30;
+      border-radius: 5px;
+      padding: 2px 5px;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+
+  strong,
+  h3,
+  a {
+    color: #2d1b30;
+  }
+  a {
+    line-height: 2rem;
+  }
+  span {
+    color: rgba(45, 27, 48, 0.8);
+  }
+
+  a:hover {
+    color: rgba(45, 27, 48, 0.9);
+  }
+}

@@ -1,0 +1,18 @@
+<form (ngSubmit)="onSubmit()" class="form" [formGroup]="checkoutForm">
+  <fieldset>
+    <label for="full-name">Full Name: </label>
+    <input id="full-name" type="text" formControlName="fullname" />
+  </fieldset>
+  <fieldset>
+    <label for="address">Address: </label>
+    <input id="address" type="text" formControlName="address" />
+  </fieldset>
+  <fieldset>
+    <label for="card">Card Number: </label>
+    <input id="card" type="text" formControlName="card" />
+  </fieldset>
+
+  <fieldset>
+    <button type="submit" [disabled]="!checkoutForm.valid">Submit</button>
+  </fieldset>
+</form>

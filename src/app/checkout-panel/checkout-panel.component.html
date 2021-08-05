@@ -1,1 +1,12 @@
-<p>checkout-panel works!</p>
+<section class="container">
+  <div style="display: flex; justify-content: space-evenly">
+    <div class="products-container">
+      <app-cart-item
+        *ngFor="let product of cart"
+        [cartItem]="product"
+      ></app-cart-item>
+    </div>
+    <app-checkout-form></app-checkout-form>
+  </div>
+  <h3>Total: ${{ subTotal }}</h3>
+</section>
