@@ -22,6 +22,7 @@ export class CartService {
         return item;
       });
     else this.cart.push({ quantity, id: product.id, product });
+    window.alert('Product successfully added');
   }
 
   get(): CartItem[] {
@@ -29,7 +30,8 @@ export class CartService {
   }
 
   remove(product: string | Number) {
-    this.cart = this.cart.filter((i) => i.id !== product);
+    if (window.confirm('Are you sure about removing this product?'))
+      this.cart = this.cart.filter((i) => i.id !== product);
   }
 
   getSubtotal(): any {

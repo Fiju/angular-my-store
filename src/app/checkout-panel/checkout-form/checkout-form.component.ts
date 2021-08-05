@@ -15,16 +15,16 @@ export class CheckoutFormComponent implements OnInit {
   checkoutForm = new FormGroup({
     fullname: new FormControl('', [
       Validators.required,
-      // Validators.minLength(3),
+      Validators.minLength(3),
     ]),
     address: new FormControl('', [
       Validators.required,
-      // Validators.minLength(3),
+      Validators.minLength(3),
     ]),
     card: new FormControl('', [
       Validators.required,
-      // Validators.minLength(16),
-      // Validators.maxLength(16),
+      Validators.minLength(12),
+      Validators.maxLength(16),
     ]),
   });
 
