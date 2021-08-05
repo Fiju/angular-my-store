@@ -8,6 +8,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductItemComponent } from './product-list/product-item/product-item.component';
 import { NavComponent } from './nav/nav.component';
 import { ProductDetailComponent } from './product-list/product-detail/product-detail.component';
+import { CheckoutPanelComponent } from './checkout-panel/checkout-panel.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProductDetailComponent } from './product-list/product-detail/product-de
     ProductItemComponent,
     NavComponent,
     ProductDetailComponent,
+    CheckoutPanelComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

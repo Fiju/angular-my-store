@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   margin: 0;
+  padding-top: calc(50px + 2rem);
+  background-color: rgba(45, 27, 48, 0.1);
 }
 
-section {
-  margin-top: 75px !important;
+p {
+  margin: 0;
 }
