@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container" *ngIf="!!cart.length; else elseBlock">
   <div style="display: flex; justify-content: space-evenly">
     <div class="products-container">
       <app-cart-item
@@ -10,3 +10,4 @@
   </div>
   <h3>Total: ${{ subTotal }}</h3>
 </section>
+<ng-template #elseBlock><h3>Your cart is empty</h3></ng-template>

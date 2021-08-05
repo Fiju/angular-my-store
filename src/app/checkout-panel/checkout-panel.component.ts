@@ -12,7 +12,6 @@ import { CartService } from '../services/cart.service';
 })
 export class CheckoutPanelComponent implements OnInit {
   cart: CartItem[] = [];
-  product: Product[] = [];
   subTotal: number = 0;
 
   constructor(private cartService: CartService) {}

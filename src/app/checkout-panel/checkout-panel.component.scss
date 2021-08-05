@@ -1,12 +1,12 @@
 .container {
   padding: 0 5rem;
-  h3 {
-    text-align: center;
-  }
 
   .products-container {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
   }
+}
+h3 {
+  text-align: center;
 }
